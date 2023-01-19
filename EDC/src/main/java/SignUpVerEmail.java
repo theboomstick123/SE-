@@ -31,7 +31,7 @@ public class SignUpVerEmail extends HttpServlet {
        
 	private String dbUrl = "jdbc:mysql://localhost:3306/SE_database";
     private String dbUname = "root";
-    private String dbPassword = "Manong9909!";
+    private String dbPassword = " ";//put your own db pass
     private String dbDriver = "com.mysql.cj.jdbc.Driver";
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
