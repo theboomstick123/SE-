@@ -23,7 +23,7 @@ public class LoginServlet extends HttpServlet {
        
 	 	private String dbUrl = "jdbc:mysql://localhost:3306/SE_database";
 	    private String dbUname = "root";
-	    private String dbPassword = "Manong9909!";
+	    private String dbPassword = ""; //your own db pass
 	    private String dbDriver = "com.mysql.cj.jdbc.Driver";
 
 
