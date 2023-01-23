@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+div.form{
+  position: relative;
+  top: 50px;
+ 
+}
+
+.alert{
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  font-size: 15px;
+  left: 600px;
+  top:250px;
+}
+
+.user{
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  bottom: 5px;
+  left: 600px;
+  font-size: 15px;
+  
+}
+
+.password{
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 15px;
+  left: 600px;
+  font-size: 15px;
+}
+
+.user1{
+	height: 20px;
+	border: 2px solid #996600;
+	margin-left: 600px;
+}
+
+.password1{
+	height: 20px;
+	border: 2px solid #996600;
+	margin-left: 600px;
+	margin-top: 20px;
+}
+
+input[type=submit]{
+  background-color: #996600;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  color: white;	
+  padding: 10px 25px;
+  margin: 60px 650px;
+  cursor: pointer;
+}
+
+div.forgotPass{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  bottom: 200px;
+  left: 600px;
+  font-size: 15px;
+}
+
+div.signUp{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 590px;
+  bottom: 20px;
+  font-size: 15px;
+}
+
+.header2{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gold;
+  font-size: 30px;
+  left: 580px;
+  bottom: 20px;
+}
+
+.header1{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #996600;
+  font-size: 35px;
+  left: 450px;
+  bottom: 40px
+}
+
+.icon{
+	position: relative;
+	top: 50px;
+	left: 500px;
+}
+
+

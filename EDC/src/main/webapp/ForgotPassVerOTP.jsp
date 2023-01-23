@@ -9,6 +9,12 @@
 </head>
 <body>
     
+<% String msg = request.getParameter("msg");
+if("wrong".equals(msg)){
+%>
+<p class="alert">Wrong OTP!</p>
+<%} %>
+    
 <div class="page">
 	    
     <div class="header1">

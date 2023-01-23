@@ -11,6 +11,15 @@
   	left: 400px;
 }
 
+.alert{
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  font-size: 15px;
+  left: 650px;
+  top:210px;
+}
+
 .header{
 	position: relative;
   	font-family: Arial, Helvetica, sans-serif;

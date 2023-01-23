@@ -11,6 +11,13 @@
 <title>Forgot Password</title>
 </head>
 <body>
+
+<% String msg = request.getParameter("msg");
+if("wrong".equals(msg)){
+%>
+<p class="alert">Email not found!</p>
+<%} %>
+
 <div class="page">
 	<div class="back">
 		<a href="login.jsp">Back to Login</a>

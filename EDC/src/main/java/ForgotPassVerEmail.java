@@ -106,7 +106,7 @@ public class ForgotPassVerEmail extends HttpServlet {
 				
 			}
 		}else {
-			out.print("Email does not exist!");
+			response.sendRedirect("ForgotPassVer.jsp?msg=wrong");
 		}
 		} catch (ClassNotFoundException e1) {
 			

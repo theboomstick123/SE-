@@ -44,9 +44,7 @@ public class LoginServlet extends HttpServlet {
 				rd.forward(request, response);
 			}
 			else {
-				RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
-				request.setAttribute("alertMsg", "Wrong Username or Password");
-				rd.forward(request, response);
+				response.sendRedirect("login.jsp?msg=wrong");
 			}
 
 			

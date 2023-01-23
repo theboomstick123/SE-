@@ -45,11 +45,7 @@ public class SignUpVerOTP extends HttpServlet {
 		}
 		else
 		{
-			request.setAttribute("message","wrong otp");
-			
-		   dispatcher=request.getRequestDispatcher("SignUpVerOTP.jsp");
-			dispatcher.forward(request, response);
-		
+			response.sendRedirect("SignUpVerOTP.jsp?msg=wrong");
 		}
 		
 	}

@@ -100,7 +100,7 @@ public class SignUpVerEmail extends HttpServlet {
 				
 			}
 		}else {
-			out.print("Email does not exist!");
+			response.sendRedirect("SignUpVerEmail.jsp?msg=wrong");
 		}
 		} catch (ClassNotFoundException e1) {
 			

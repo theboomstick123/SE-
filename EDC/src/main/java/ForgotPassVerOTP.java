@@ -53,10 +53,7 @@ public class ForgotPassVerOTP extends HttpServlet {
 		}
 		else
 		{
-			request.setAttribute("message","wrong otp");
-			
-		   dispatcher=request.getRequestDispatcher("ForgotPassVerOTP.jsp");
-			dispatcher.forward(request, response);
+			response.sendRedirect("ForgotPassVerOTP.jsp?msg=wrong");
 			
 		
 		

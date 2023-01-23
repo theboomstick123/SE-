@@ -46,7 +46,7 @@ public class forgotPassword extends HttpServlet {
 					dispatcher = request.getRequestDispatcher("login.jsp");
 				} else {
 					request.setAttribute("status", "resetFailed");
-					dispatcher = request.getRequestDispatcher("login.jsp");
+					dispatcher = request.getRequestDispatcher("forgotPassword.jsp");
 				}
 				dispatcher.forward(request, response);
 			} catch (Exception e) {

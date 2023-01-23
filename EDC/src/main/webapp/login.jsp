@@ -1,12 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
-<% String message = (String)request.getAttribute("alertMsg");%>
-    
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="loginStyles.css">
+<link rel="stylesheet" href="loginStyle.css">
 <style>
     a { text-decoration: none; }
   </style>
@@ -14,16 +12,11 @@
 <title>Login</title>			
 </head>
 <body>
-
-<script>
-	function val(){
-		var user = document.getElementById("uname").value;
-		var pass = document.getElementById("upwd").value;
-		var msg = "<%=message%>";
-		
-		    alert(msg);
-	}
-</script>
+<% String msg = request.getParameter("msg");
+if("wrong".equals(msg)){
+%>
+<p class="alert">Wrong Username or Password!</p>
+<%} %>
 
 <div class="form">
 
