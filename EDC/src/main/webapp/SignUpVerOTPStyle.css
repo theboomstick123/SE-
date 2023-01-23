@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+.page{
+	position: relative;
+  	top: 100px;
+}
+
+.header1{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #996600;
+  font-size: 25px;
+  left: 400px;
+  bottom: 20px;
+}
+
+.header2{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #996600;
+  font-size: 25px;
+  left: 450px;
+  bottom: 40px
+}
+
+.otp1{
+	font-family: Arial, Helvetica, sans-serif;
+ 	position: relative;
+  	left: 610px;
+  	top: 7px;
+  	font-size: 15px;
+}
+
+.otp2{
+	height: 20px;
+	border: 2px solid #996600;
+	margin-left: 610px;
+	margin-top: 10px;
+}
+
+input[type=submit]{
+  	background-color: #996600;
+  	border: none;
+  	border-radius: 4px;
+  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  	color: white;	
+  	padding: 10px 25px;
+  	margin: 100px 660px;
+  	cursor: pointer;
+}

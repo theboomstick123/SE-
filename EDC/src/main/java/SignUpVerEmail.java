@@ -15,6 +15,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.Properties;
 import java.util.Random;
 
@@ -31,8 +32,10 @@ public class SignUpVerEmail extends HttpServlet {
        
 	private String dbUrl = "jdbc:mysql://localhost:3306/SE_database";
     private String dbUname = "root";
-    private String dbPassword = " ";//put your own db pass
+    private String dbPassword = ""; //lagay mo dito kung meron password db mo
     private String dbDriver = "com.mysql.cj.jdbc.Driver";
+    Date now = new Date();
+    long curr = this.now.getTime();
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
@@ -77,8 +80,8 @@ public class SignUpVerEmail extends HttpServlet {
 					MimeMessage message = new MimeMessage(session);
 					message.setFrom(new InternetAddress(email));// change accordingly
 					message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-					message.setSubject("Hello");
-					message.setText("your OTP is: " + otpvalue);
+					message.setSubject("OTP");
+					message.setText("Your OTP is: " + otpvalue + "\nYou only have 3 minutes until the OTP expires!");
 					// send message
 					Transport.send(message);
 					System.out.println("message sent successfully");
@@ -91,7 +94,8 @@ public class SignUpVerEmail extends HttpServlet {
 				request.setAttribute("message","OTP is sent to your email id");
 				
 				mySession.setAttribute("otp",otpvalue); 
-				mySession.setAttribute("email",email); 
+				mySession.setAttribute("email",email);
+				mySession.setAttribute("Current", curr);
 				dispatcher.forward(request, response);
 				
 			}

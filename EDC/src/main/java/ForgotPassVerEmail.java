@@ -85,8 +85,9 @@ public class ForgotPassVerEmail extends HttpServlet {
 					MimeMessage message = new MimeMessage(session);
 					message.setFrom(new InternetAddress(email));// change accordingly
 					message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-					message.setSubject("Hello");
-					message.setText("your OTP is: " + otpvalue);
+					message.setSubject("OTP");
+					message.setText("Your OTP is: " + otpvalue + "\nYou only have 3 minutes until the OTP expires!");
+					
 					// send message
 					Transport.send(message);
 					System.out.println("message sent successfully");

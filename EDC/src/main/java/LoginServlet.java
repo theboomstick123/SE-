@@ -23,7 +23,7 @@ public class LoginServlet extends HttpServlet {
        
 	 	private String dbUrl = "jdbc:mysql://localhost:3306/SE_database";
 	    private String dbUname = "root";
-	    private String dbPassword = ""; //your own db pass
+	    private String dbPassword = ""; //lagay mo dito kung meron password db mo
 	    private String dbDriver = "com.mysql.cj.jdbc.Driver";
 
 
@@ -44,9 +44,11 @@ public class LoginServlet extends HttpServlet {
 				rd.forward(request, response);
 			}
 			else {
-				out.print("WRONG");
+				RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+				request.setAttribute("alertMsg", "Wrong Username or Password");
+				rd.forward(request, response);
 			}
-			
+
 			
 		} catch (ClassNotFoundException e) {
 

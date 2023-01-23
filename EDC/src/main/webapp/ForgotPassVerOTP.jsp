@@ -3,16 +3,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="ForgotPassVerOTPStyles.css">
 <meta charset="UTF-8">
 <title>Forgot Password</title>
 </head>
 <body>
-
-	<h2 align="center">the OTP that has been send to your email</h2>
-	<form action="ForgotPassVerOTP" method="post">
-   	 <table align="center">
+    
+<div class="page">
+	    
+    <div class="header1">
+		<p>The OTP that has been sent to your email.</p>
+	</div>
 	
-    <tr><td>OTP</td><td><input type="text" name="OTP" placeholder="123456"></td></tr>
-    <tr><td><input type="submit" value="Verify"></td></tr>
+	<div class="header2">
+		<p>You only have 3 minutes until the OTP expires.</p>
+	</div>
+	
+	<form action="ForgotPassVerOTP" method="post">
+   	 
+   	 <div class="otp1">
+   	 		<label>Enter OTP here</label>
+   	 	</div>
+     	 	<input type="text" name="OTP" placeholder="123456" class="otp2">	
+    	
+    	
+    <div class="submit">
+    		<input type="submit" value="Verify">
+    	</div>
+
+</form> 
+</div>
 </body>
 </html>

@@ -65,4 +65,34 @@
     <servlet-name>SignUpVerOTP</servlet-name>
     <url-pattern>/SignUpVerOTP</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ForgotPassVerEmail</display-name>
+    <servlet-name>ForgotPassVerEmail</servlet-name>
+    <servlet-class>ForgotPassVerEmail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForgotPassVerEmail</servlet-name>
+    <url-pattern>/ForgotPassVerEmail</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ForgotPassVerOTP</display-name>
+    <servlet-name>ForgotPassVerOTP</servlet-name>
+    <servlet-class>ForgotPassVerOTP</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForgotPassVerOTP</servlet-name>
+    <url-pattern>/ForgotPassVerOTP</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>forgotPassword</display-name>
+    <servlet-name>forgotPassword</servlet-name>
+    <servlet-class>forgotPassword</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>forgotPassword</servlet-name>
+    <url-pattern>/forgotPassword</url-pattern>
+  </servlet-mapping>
 </web-app>
